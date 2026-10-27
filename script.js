@@ -61,8 +61,13 @@ if (registerForm) {
             return;
         }
 
-        alert("Registration successful! Welcome, " + fullname + "!");
-        registerForm.reset();
+        // Save the user's name for the dashboard
+sessionStorage.setItem("userName", fullname);
+sessionStorage.setItem("userEmail", email);
+
+// Open the dashboard page
+window.location.href = "dashboard.html";
+        
     });
 }
 

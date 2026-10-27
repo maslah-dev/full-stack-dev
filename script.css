@@ -257,6 +257,33 @@ footer a:hover {
         font-size: 26px;
     }
 
+    /* jQuery section highlight */
+.selected-section {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* Student search box */
+#studentSearch {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#studentSearch:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+/* Smooth page scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
     table {
         font-size: 14px;
     }
